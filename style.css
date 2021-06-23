@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+   
+}
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.hindi{
+        font-family: "noto sans";
+        text-align: justify;
+      }
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 12px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.d1 {
+  font-size: 62.5%;
+  background-image: linear-gradient(#2c3e50, #009ffd);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+ 
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.9%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+
+
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: red;
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .d1{
+    padding: 1rem;
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+
+nav{
+background: #2c3e50;
+height: 80px;
+width:100%;
+}
+
+label.logo{
+color:white;
+font-size:35px;
+line-height: 80px;
+padding: 0 60px;
+font-weight: bold;
+}
+
+.matter{
+  font-size: 35px;
+}
+.hm{
+  font-size: 60px;
+  color: white;
+  font-family: Merriweather;
+ 
+  width: 100%;
+  text-align: center;
+
+}
+
+nav ul{
+float: right;
+margin-right: 20px;
+}
+
+nav ul li{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+
+nav ul li a{
+color: white;
+font-size: 17px;
+text-transform: uppercase;
+border-radius:3px;
+padding: 7px 13px;
+text-decoration: none;
+
+}
+
+a.active,a:hover{
+background: #1b9bff;
+transition: .5s;
+}
+
+.checkbtn{
+font-size: 30px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+
+#check{
+display: none;
+}
+
+@media(max-width: 952px){
+label.logo{
+font-size: 30px;
+padding-left: 30px;
+}
+nav ul li a{
+font-size: 16px;
+}
+
+}
+
+.hall{
+        font-size: 50px;
+        color:red;
+      }
+
+@media(max-width: 858px){
+.checkbtn{
+display: block;
+}
+.matter{
+  font-size: 16px;
+}
+.hm{
+  font-size: 30px;
+}
+.hall{
+  font-size: 23px;
+}
+ul{
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #2c3e50;
+top: 80px;
+left:-100%;
+text-align: center;
+transition: all .5s;
+z-index: 1;
+}
+nav ul li{
+display: block;
+margin:50px 0;
+line-height: 30px;
+}
+nav ul li a{
+font-size: 20px;
+}
+a:hover,a.active{
+background: none;
+color: #0082e6;
+}
+#check:checked ~ ul{
+left:0;
+}
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width:100%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 3%;
+}
+
+
+.accordion {
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  border-color: black;
+  color:black;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  background:   #ffcba4;
+}
+
+.accordion__label,
+.accordion__content {
+  padding: 14px 20px;
+}
+
+.accordion__label {
+  display: block;
+  color: black;
+  border-color: black;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.accordion__label:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.accordion__content {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+.accordion__input:unchecked ~ .accordion__content {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+footer{
+  bottom: 0px;
+  width:100%;
+  background:white;
+  color: black;
+}
+
+
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.35s;
+}
+
